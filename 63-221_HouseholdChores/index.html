@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <title>Household Chores</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Household Chores</h1>
+        <form>
+            <input type="text" id="input__chore" placeholder="Enter Chore">
+            <h3>Asign Chore</h3>
+            <div class="asign__container">
+                <div class="chore__color" id="mom"></div>
+                <div class="chore__color" id="dad"></div>
+                <div class="chore__color" id="son"></div>
+                <div class="chore__color" id="daughter"></div>
+            </div>
+            <button type="submit" class="submit__btn">add</button>
+        </form>
+        <div class="chores__container">
+            <div class="chores__column" id="mom__col">
+                <h2 class="chore__person" style="border-bottom: 3px solid #ef476f;">Red</h2>
+                <!-- <div class="chore">
+                    <p>do something</p>
+                    <i class="fas fa-times delete"></i>
+                </div> -->
+            </div>
+            <div class="chores__column" id="dad__col">
+                <h2 class="chore__person" style="border-bottom: 3px solid #06d6a0;">Green</h2>
+                <!-- <div class="chore">
+                    <p>do something</p>
+                    <i class="fas fa-times delete"></i>
+                </div> -->
+            </div>
+            <div class="chores__column" id="son__col">
+                <h2 class="chore__person" style="border-bottom: 3px solid #ffd166;">Yellow</h2>
+                <!-- <div class="chore">
+                    <p>do something</p>
+                    <i class="fas fa-times delete"></i>
+                </div> -->
+            </div>
+            <div class="chores__column" id="daughter__col">
+                <h2 class="chore__person" style="border-bottom: 3px solid #118ab2;">Blue</h2>
+                <!-- <div class="chore">
+                    <p>do something</p>
+                    <i class="fas fa-times delete"></i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

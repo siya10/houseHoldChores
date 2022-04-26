@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    --pink:#EF476F;
+    --yellow: #FFD166;
+    --green: #06D6A0;
+    --blue: #118AB2;
+    --dark: #073B4C;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+h1{
+    padding: 10px 20px;
+    background-color: var(--pink);
+    color: white;
+    border: solid 3px var(--green);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+form input{
+    padding: 5px 20px;
+    border: 1px solid var(--blue);
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    color: var(--dark);
+}
+
+form input::placeholder{
+    color: #ccc;
+    text-align: center;
+}
+
+h3{
+    margin-top: 2rem;
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.asign__container{
+    display: flex;
+}
+
+.chore__color{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* class added with Javascript */
+.chore__color.selected{
+    border: solid 3px var(--dark);
+}
+
+#mom{background-color: var(--pink);}
+#dad{background-color: var(--green);}
+#son{background-color: var(--yellow);}
+#daughter{background-color: var(--blue);}
+
+.submit__btn{
+    border: none;
+    outline: none;
+    background-color: var(--dark);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.chores__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 2px solid var(--dark);
+    padding: 1rem;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.chores__column{
+    margin: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chores__column h2{
+    width: 100%;
+    color: var(--dark);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chore{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 26px;
+    padding: 3px;
+    border-bottom: 1px solid var(--dark);
+}
+
+.chore:hover{
+    background-color: #eee;
+}
+
+.chore .fas{
+    cursor: pointer;
+    color: #ccc;
+}
+
+.chore .fas:hover{
+    color: red;
+}
